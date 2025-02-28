@@ -1,0 +1,40 @@
+/* Custom border gradient */
+.service-border-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 30px;
+    position: relative;
+    /* Allow positioning of the pseudo-element */
+    background: rgba(255, 255, 255, 0.12);
+    z-index: 1;
+    /* Make sure the content is above the border */
+}
+
+
+
+.about-card {
+    background: radial-gradient(71.97% 71.97% at 50% 50%, rgba(1, 1, 1, 0) 0%, #010101 100%);
+    width: 381px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-circle {
+    background: rgba(251, 202, 30, 1);
+    filter: blur(120px);
+    top:-20%;
+    left:-2%
+}
+
+.org-circle {
+    background: rgba(251, 73, 30, 1);
+    top: 30%;
+    filter: blur(100px);
+    left: 0%;
+}

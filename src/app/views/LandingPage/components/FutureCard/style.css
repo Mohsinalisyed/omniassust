@@ -1,0 +1,24 @@
+.animate-position {
+    animation: moveDiv 5s ease-in infinite;
+    /* Animation lasts 5 seconds, smooth easing, infinite loop */
+    animation-delay: 5s;
+}
+
+@keyframes moveDiv {
+    0% {
+        
+        opacity: 0.4;
+    }
+
+    50% {
+        
+        /* Adjust these values to your desired end position */
+        opacity: 0.5;
+    }
+
+    100% {
+       
+        /* Move back to the starting point */
+        opacity: 0.6;
+    }
+}

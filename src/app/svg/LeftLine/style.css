@@ -1,0 +1,20 @@
+@keyframes moveGradient {
+    0% {
+        /* Gradient starts at position 0 */
+        stop-color: #ffaa40;
+        stop-opacity: 0;
+        stop-color: #9c40ff;
+    }
+
+    100% {
+        /* Gradient ends at position 100% */
+        stop-color: #9c40ff;
+        stop-opacity: 0;
+        stop-color: #ffaa40;
+    }
+}
+
+/* Apply the animation to the gradient */
+#red {
+    animation: moveGradient 3s linear infinite;
+}

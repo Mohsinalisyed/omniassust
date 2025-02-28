@@ -1,0 +1,55 @@
+/* style.css */
+
+/* The container for the section */
+#home {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-size: 100px 100px;
+    /* To ensure it stays in the background */
+}
+
+/* Create the grid items */
+.grid-container {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0));
+    /* Define 10 columns, adjust as needed */
+    grid-template-rows: repeat(auto-fill, minmax(100px, 0));
+    /* Define 10 rows, adjust as needed */
+    gap: 1px;
+    /* Remove gap between grid items */
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Box styling for each grid item */
+.grid-box {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+.hero-bg-image {
+    background-image: url('../../../../assets/images/herogroupimage.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 101;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    /* Add this line */
+}
+.text-gradient-orange {
+    background-image: linear-gradient(87.84deg, #FB491E 77.71%, #FBCA1E 84.04%);
+}
+

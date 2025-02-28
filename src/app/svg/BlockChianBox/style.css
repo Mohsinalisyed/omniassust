@@ -1,0 +1,54 @@
+@keyframes animate-merge {
+    0% {
+        transform: translateX(-100%) scaleX(1.5);
+        /* Start from left side, larger scale */
+        fill-opacity: 0;
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1);
+        /* Merge towards the center */
+        fill-opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(100%) scaleX(1.5);
+        /* Move to the right side, larger scale */
+        fill-opacity: 1;
+    }
+}
+
+@keyframes animate-merge2 {
+    0% {
+        transform: translateX(0%) scaleX(1);
+        /* Start from center */
+        fill-opacity: 0.7;
+    }
+
+    50% {
+        transform: translateX(0) scaleX(1);
+        /* Keep at center */
+        fill-opacity: 0.7;
+    }
+
+    100% {
+        transform: translateX(100%) scaleX(1.5);
+        /* Move to the right side, larger scale */
+        fill-opacity: 1;
+    }
+}
+
+/* Apply the animation to the paths */
+.animate-path1 {
+    animation: animate-merge 10s infinite ease-in;
+    /* First animation duration */
+    transform-origin: left;
+    animation-delay: 1s;
+    /* Starts immediately */
+}
+
+.animate-path2 {
+    animation: animate-merge2 10s infinite ease-out;
+    transform-origin: left;
+    animation-delay: 3s;
+}
