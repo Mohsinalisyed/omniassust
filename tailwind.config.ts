@@ -49,7 +49,7 @@ export default {
         gray_three: "#252323",
         gray_four: "#555555",
         gray_five: "#ffffff1f",
-        card_background:"#ffffff06",
+        card_background: "#ffffff06",
         orange: "#FB491E",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -97,6 +97,12 @@ export default {
           "linear-gradient(90deg, #8266F2 0%, #8266F2 58.09%, rgba(255, 255, 255, 0.8) 73.5%, #8266F2 88.51%, #9488C3 100%)",
         text_gradient_one:
           "linear-gradient(93.21deg, #FB491E 0%, #FBCA1E 100%)",
+        borderGradient: `linear-gradient(
+            142.08deg, 
+            rgba(255, 255, 255, 0.7) -5.03%, 
+            rgba(188, 188, 188, 0.85) 21.3%, 
+            rgba(13, 16, 35, 0.2) 49.04%, 
+            rgba(187, 187, 187, 0.5) 70.19%)`,
       },
       fontSize: {
         "14": [

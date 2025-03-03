@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <>
       <div className="hero-bg-image"></div>
-      <section id="home" className="pt-[193px] md:pt-0 px-4 md:px-0">
+      <section id="home" className="md:pt-[144px] pt-[129px] px-4 md:px-0">
         <div className="grid-container hidden md:grid">
           <CursorBox />
           {/* Create grid items */}
@@ -17,7 +17,7 @@ const HeroSection = () => {
             <div key={index} className="grid-box"></div>
           ))}
         </div>
-        <div className="min-h-[100vh] w-full h-full relative flex justify-center items-center z-[102]">
+        <div className="min-h-[90vh] w-full h-full relative flex justify-center items-center z-[102]">
           <div className="flex flex-col max-w-[1063px] items-center min-h-[398px] pb-10 md:pb-0">
             <div className="relative">
               <div className="absolute top-[-5px]">
@@ -26,7 +26,7 @@ const HeroSection = () => {
               <div className="service-border-gradient ">Service Revolution</div>
             </div>
 
-            <div className="text-[56px] text-center mt-[40px] mb-[24px] leading-[61px]">
+            <div className="text-40 md:text-[56px] text-center mt-[40px] mb-[24px] leading-[40px] md:leading-[61px]">
               Transforming CSaaS with{" "}
               <span className="bg-text_gradient_one text-transparent bg-clip-text">
                 AI <br />

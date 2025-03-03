@@ -17,16 +17,18 @@ const CursorBox = () => {
 
   return (
     <div
+      className="md:block hidden"
       style={{
         position: "absolute",
-        width: "289px",
-        height: "310px",
+        width: "280px",
+        height: "280px",
         backgroundImage:
           "radial-gradient(circle, #373737 40%, #555555 80%, #555555 100%)", // Radial gradient for dark center and light edge,
         pointerEvents: "none",
         transform: transform, // Apply transform here
         transition: prefersReducedMotion ? "none" : "transform 0.1s ease-out",
         zIndex: "-1", // Use appropriate z-index
+        borderRadius:"100%"
       }}
     />
   );

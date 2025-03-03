@@ -14,7 +14,10 @@ import BackgroundGardientColor from '@/app/components/BackgroundGardientColor';
 const FutureCard = () => {
   return (
     <div>
-      <div id={"FutureCard"} className="xl:min-h-screen w-full py-[120px]">
+      <div
+        id={"FutureCard"}
+        className="xl:min-h-screen w-full pt-[64px] pb-[48px] md:py-[120px]"
+      >
         <div className="flex items-center flex-col justify-between relative md:flex-row">
           <div className="hidden  md:block">
             <div className="relative w-[40%]">
@@ -29,30 +32,33 @@ const FutureCard = () => {
               <BackgroundGardientColor />
             </div>
           </div>
-          <div className="w-full md:w-[60%] flex justify-center items-center flex-col relative right-0 md:right-[-20%] md:absolute">
-            <p className="text-[40px] ml-[-16px] text-gray_two text-center">
+          <div className="w-full md:w-[60%] flex justify-center md:items-start flex-col relative right-0 md:right-[-20%] md:absolute">
+            <p className="text-[28px] md:text-[40px] leading-[30px] md:leading-[52px] md:ml-[-16px] text-gray_two text-center">
               Advanced AI Integration
             </p>
-            <ul className="list-disc list-bullets text-gray_two text-[16px]">
-              <li>Natural Language Processing</li>
-              <li>Predictive Analytics</li>
-              <li>Personalized Learning</li>
-              <li>Continuous Improvement</li>
+            <ul className="md:list-disc  mt-6 list-bullets text-gray_two text-[16px]">
+              <li className='text-center mb-4 md:text-start'>Natural Language Processing</li>
+              <li className='text-center mb-4 md:text-start'>Predictive Analytics</li>
+              <li className='text-center mb-4 md:text-start'>Personalized Learning</li>
+              <li className='text-center mb-4 md:text-start'>Continuous Improvement</li>
             </ul>
           </div>
         </div>
       </div>
-      <div id={"FutureCard"} className="xl:min-h-screen w-full py-[120px]">
+      <div
+        id={"FutureCard"}
+        className="xl:min-h-screen w-full pt-[0px] pb-[48px] md:py-[120px]"
+      >
         <div className=" w-full flex items-center justify-between relative">
           <div className="flex flex-col items-center w-full md:block">
-            <p className="text-[40px] ml-[-16px] text-gray_two text-center md:text-start">
+            <p className="text-[28px] md:text-[40px] leading-[30px] md:leading-[52px] md:ml-[-16px] text-gray_two text-center md:text-start">
               Enterprise-Grade Security
             </p>
-            <ul className="list-disc list-bullets text-gray_two text-[16px]">
-              <li>Smart Contract Audits</li>
-              <li>End-to-End Encryption</li>
-              <li>Multi-Factor Authentication</li>
-              <li>Real-Time Monitoring</li>
+            <ul className="md:list-disc mt-6 list-bullets text-gray_two text-[16px]">
+              <li className='text-center mb-4 md:text-start'>Smart Contract Audits</li>
+              <li className='text-center mb-4 md:text-start'>End-to-End Encryption</li>
+              <li className='text-center mb-4 md:text-start'>Multi-Factor Authentication</li>
+              <li className='text-center mb-4 md:text-start'>Real-Time Monitoring</li>
             </ul>
           </div>
           <div className="hidden  md:block">
@@ -76,7 +82,10 @@ const FutureCard = () => {
           </div>
         </div>
       </div>
-      <div id={"FutureCard"} className="xl:min-h-screen w-full py-[120px]">
+      <div
+        id={"FutureCard"}
+        className="xl:min-h-screen w-full pt-[0px] pb-[48px] md:py-[120px]"
+      >
         <div className="flex items-center justify-between relative">
           <div className="hidden  md:block">
             <div className="absolute left-[-60px]">
@@ -103,14 +112,14 @@ const FutureCard = () => {
             </div>
           </div>
           <div className="w-full md:w-auto  md:max-w-[521px] relative flex flex-col items-center md:block md:absolute right-0 top-[20px]">
-            <p className="text-[40px] ml-[-16px] text-gray_two text-center">
+            <p className="text-[28px] md:text-[40px] leading-[30px] md:leading-[52px] md:ml-[-16px] text-gray_two text-center">
               Blockchain Powered
             </p>
-            <ul className="list-disc list-bullets text-gray_two text-[16px]">
-              <li>Smart Contract Security</li>
-              <li>Layer 2 Scalability</li>
-              <li>Transparent Operations</li>
-              <li>Immutable Records</li>
+            <ul className="md:list-disc mt-6 list-bullets text-gray_two text-[16px]">
+              <li className='text-center mb-4 md:text-start'>Smart Contract Security</li>
+              <li className='text-center mb-4 md:text-start'>Layer 2 Scalability</li>
+              <li className='text-center mb-4 md:text-start'>Transparent Operations</li>
+              <li className='text-center mb-4 md:text-start'>Immutable Records</li>
             </ul>
           </div>
         </div>

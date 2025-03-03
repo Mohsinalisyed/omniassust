@@ -4,19 +4,20 @@ import { FooterData, FooterWebData, NavbarData } from '../Content'
 import './style.css'
 const Footer = () => {
     return (
-      <div className="w-full relative overflow-hidden  bg-footer pt-[200px]">
+      <div className="w-full relative overflow-hidden   pt-[200px]">
+        <div className="bg-footer"></div>
         <div className="container flex flex-col justify-between py-8">
           <div className="flex justify-between">
             <div className="flex  flex-col w-full md:w-auto">
-              <div className="mb-20 self-start flex items-center gap-4">
+              <div className="mb-20 self-start flex items-center gap-4 text-[32px]">
                 <FooterLogoIcon /> Omniassist.ai
               </div>
 
-              <h1 className="text-14 leading-4 md:text-32 md:leading-9 max-w-[60%] font-medium mb-8 md:mb-14 md:max-w-full">
-                Sign up for the newsletter and <br />
-                stay up-to-date on all things Omni
+              <h1 className="text-[24px] leading-24 md:text-32 md:leading-9 text-gray_two font-medium mb-8 md:mb-14 md:max-w-full">
+                Sign up for the newsletter and stay up-to-date on all things
+                Omni
               </h1>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 max-w-full md:max-w-[60%]">
                 <h6 className="text-16 font-medium">Sign up for news</h6>
                 <div className="rounded-[48px] h-12 relative mb-[40px]  max-h-12 p-1">
                   <input

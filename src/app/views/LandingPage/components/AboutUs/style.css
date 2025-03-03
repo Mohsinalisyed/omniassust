@@ -1,5 +1,5 @@
 .bg-card {
-    background: radial-gradient(71.97% 71.97% at 50% 50%, rgba(1, 1, 1, 0) 0%, #010101 100%);
+    background: transparent;
     opacity: 0.6;
     transition: background 0.3s ease, opacity 0.3s ease;
     /* Smooth background and opacity transition */
@@ -15,7 +15,7 @@
 }
 
 .omnicard:hover {
-    background: radial-gradient(71.97% 71.97% at 50% 50%, rgba(1, 1, 1, 0) 0%, #010101 100%);
+background: radial-gradient(93.36% 93.36% at 50% 40%, rgba(102, 96, 96, 0) 0%, rgba(77, 77, 77, 0.5) 100%);
     transform: scale(1.01);
     /* Slight zoom-in effect */
     opacity: 1;

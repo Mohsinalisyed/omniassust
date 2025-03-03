@@ -1,5 +1,8 @@
 
-
+.sliderContainer {
+    background: rgba(1, 1, 1, 0.1);
+    /* Black color with 30% opacity */
+}
 .progressBarContainer {
     max-width:1280px;
     margin: auto;

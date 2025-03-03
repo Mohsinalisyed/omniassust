@@ -8,7 +8,7 @@ const JouneryPhase = () => {
       <div id={"aboutus"} className="max-w-[846px] mx-auto mb-[80px] px-4 md:px-0">
         <div className="w-full flex flex-col items-center">
           <div className="w-full flex flex-col justify-center items-center gap-4 ">
-            <h1 className="text-40 text-center">
+            <h1 className="heading-font">
               Our
               <span className="bg-text_gradient_one text-transparent bg-clip-text">
                 {" "}
@@ -16,7 +16,7 @@ const JouneryPhase = () => {
               </span>
               Forward
             </h1>
-            <p className="text-16 leading-5 text-center text-gray_two text-[16px] hidden md:block">
+            <p className="text-16 leading-5 text-center text-gray_two text-[16px]">
               A clear path to revolutionizing customer support{" "}
             </p>
           </div>

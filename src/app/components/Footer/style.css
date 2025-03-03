@@ -2,4 +2,16 @@
     background-image: url('../../assets/images/footerbgimage.png');
     background-repeat: no-repeat;
     background-position: left 0% top 80%;
+    translate: -100px -100px;
+    position: absolute;
+    animation: animate-merge 2s infinite alternate ease-in;
+    height: 80vh;
+    width: 100%;
+}
+@keyframes animate-merge {
+
+
+    100% {
+        translate: 0;
+    }
 }

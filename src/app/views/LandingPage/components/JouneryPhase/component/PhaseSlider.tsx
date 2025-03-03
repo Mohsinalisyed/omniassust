@@ -5,6 +5,7 @@ import "./style.css";
 import SlideCard from "./SlideCard";
 import PhaseIcon from "@/app/svg/PhseIcon";
 import { PhaseData } from "../PhaseData";
+import DragBox from "@/app/hooks/DragBox";
 
 const PhaseSlider = () => {
   const [progressBarIndex, setProgressBarIndex] = useState(0);
@@ -105,43 +106,47 @@ const phasesettings = {
 
   return (
     <div className="sliderContainer">
-      <div className="progressBarContainer max-w-[1440px] mx-auto">
-        {/* Phase slider */}
-        <div style={{ pointerEvents: "none" }}>
-          <Slider ref={cardSliderRef} {...phasesettings}>
-            {[1, 2, 3, 4, 5].map((phase) => (
-              <div key={phase}>
-                <div className="flex items-center">
-                  <PhaseIcon /> Phase {phase}
+      <DragBox />
+      <div className="max-w-[1440px] mx-auto">
+        <div className="progressBarContainer">
+          {/* Phase slider */}
+          <div style={{ pointerEvents: "none" }}>
+            <Slider ref={cardSliderRef} {...phasesettings}>
+              {[1, 2, 3, 4, 5].map((phase) => (
+                <div key={phase}>
+                  <div className="flex items-center">
+                    <PhaseIcon /> Phase {phase}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </div>
+
+          <span className="progressBar">
+            <div
+              className="inProgress"
+              style={{
+                width: getColorForSlide(progressBarIndex),
+                background:
+                  "linear-gradient(93.21deg, #FB491E 0%, #FBCA1E 100%)",
+              }}
+            ></div>
+          </span>
         </div>
 
-        <span className="progressBar">
-          <div
-            className="inProgress"
-            style={{
-              width: getColorForSlide(progressBarIndex),
-              background: "linear-gradient(93.21deg, #FB491E 0%, #FBCA1E 100%)",
-            }}
-          ></div>
-        </span>
+        {/* Slide card slider */}
+        <Slider ref={phaseSliderRef} {...settings}>
+          {PhaseData.map((phase, index) => (
+            <div key={index} className="slick-slide">
+              <SlideCard
+                img={phase.img}
+                description={phase.description}
+                heading={phase.heading}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
-
-      {/* Slide card slider */}
-      <Slider ref={phaseSliderRef} {...settings}>
-        {PhaseData.map((phase, index) => (
-          <div key={index} className="slick-slide">
-            <SlideCard
-              img={phase.img}
-              description={phase.description}
-              heading={phase.heading}
-            />
-          </div>
-        ))}
-      </Slider>
     </div>
   );
 };
