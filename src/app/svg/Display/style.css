@@ -1,20 +1,16 @@
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.animated-path {
+    fill: #000;
+    /* Starting color */
+    animation: colorChange 2s infinite alternate;
+    /* Animation every 2 seconds */
+}
 
-    50% {
-        transform: scale(1.5);
-        opacity: 0.5;
+@keyframes colorChange {
+    0% {
+        fill: #000;
     }
 
     100% {
-        transform: scale(1);
-        opacity: 1;
+        fill: #fff;
     }
-}
-
-path {
-    animation: pulse 2s infinite ease-in-out;
 }

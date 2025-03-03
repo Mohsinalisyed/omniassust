@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import "./style.css";
 function Display() {
   return (
     <svg
@@ -74,18 +74,21 @@ function Display() {
           stroke="#fff"
           strokeOpacity={0.25}
           strokeWidth={0.5}
+          className="animated-path"
         />
         <path
           d="M119.543 171.349c.612.353 1.257.086 1.44-.597.183-.683-.165-1.524-.777-1.878-.613-.354-1.258-.086-1.441.597-.183.683.165 1.524.778 1.878z"
           stroke="#fff"
           strokeOpacity={0.5}
           strokeWidth={0.5}
+          className="animated-path"
         />
         <path
           d="M120.609 167.365c.613.354 1.258.087 1.441-.596.183-.684-.165-1.525-.778-1.878-.613-.354-1.258-.087-1.441.597-.183.683.165 1.524.778 1.877z"
           stroke="#fff"
           strokeOpacity={0.75}
           strokeWidth={0.5}
+          className="animated-path"
         />
         <path
           d="M121.677 163.382c.613.354 1.258.086 1.441-.597.183-.683-.165-1.524-.778-1.878-.612-.353-1.257-.086-1.441.597-.183.683.166 1.524.778 1.878z"
@@ -244,7 +247,6 @@ function Display() {
           x2={148.289}
           y2={65.0749}
           gradientUnits="userSpaceOnUse"
-          
         >
           <stop stopColor="#fff" />
           <stop offset={1} stopColor="#6139FF" />
