@@ -12,9 +12,9 @@ const DragBox = () => {
 React.useEffect(() => {
   if (!prefersReducedMotion && mousePosition.x && mousePosition.y) {
     // Decrease the distance by adding an offset (e.g., 10px)
-    const offset = 200; // Adjust this value to get the desired distance
+    const offset = 0; // Adjust this value to get the desired distance
     setTransform(
-      `translate(${mousePosition.x - offset}px, ${mousePosition.y - offset}px)`
+      `translate(${mousePosition.x - offset}px, ${mousePosition.y - 0}px)`
     );
   }
 }, [mousePosition, prefersReducedMotion]);

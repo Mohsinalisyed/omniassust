@@ -8,7 +8,7 @@
     font-size: 12px;
     border-radius: 30px;
     position: relative;
-    /* Allow positioning of the pseudo-element */
+    color: rgba(255, 255, 255, 0.64);
     background: rgba(255, 255, 255, 0.12);
     z-index: 1;
     /* Make sure the content is above the border */

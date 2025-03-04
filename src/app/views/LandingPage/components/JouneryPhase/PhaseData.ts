@@ -3,6 +3,7 @@ import phase from "../../../../assets/images/phase1.png";
 import phase2 from "../../../../assets/images/phase2.png";
 import phase3 from "../../../../assets/images/phase3.png";
 import phase4 from "../../../../assets/images/phase4.png";
+import phase5 from "../../../../assets/images/phase5.png";
 export interface IPhaseData {
   heading: string;
   description:string[];
@@ -48,12 +49,12 @@ export const PhaseData: IPhaseData[] = [
     ],
   },
   {
-    img: phase4,
-    heading: "Payments",
+    img: phase5,
+    heading: "Developer Tools",
     description: [
-      "Multi-Gateway Integration",
-      "Subscription System",
-      "Token Payment Processing",
+      " SDK Release",
+      "API Documentation",
+      "Third-Party Integration Tools",
     ],
   },
 ];

@@ -8,7 +8,7 @@ import GlobalBorderGradient from "@/app/svg/GlobalBorderGradient";
 const HeroSection = () => {
   return (
     <>
-      <div className="hero-bg-image"></div>
+      <div className="hero-bg-image hidden md:block"></div>
       <section id="home" className="md:pt-[144px] pt-[129px] px-4 md:px-0">
         <div className="grid-container hidden md:grid">
           <CursorBox />
@@ -26,7 +26,7 @@ const HeroSection = () => {
               <div className="service-border-gradient ">Service Revolution</div>
             </div>
 
-            <div className="text-40 md:text-[56px] text-center mt-[40px] mb-[24px] leading-[40px] md:leading-[61px]">
+            <div className="text-gray_two text-40 md:text-[56px] text-center mt-[40px] mb-[24px] leading-[44px] md:leading-[61px]">
               Transforming CSaaS with{" "}
               <span className="bg-text_gradient_one text-transparent bg-clip-text">
                 AI <br />

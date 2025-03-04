@@ -47,7 +47,7 @@ const Navbar = ({ onPresentMobileMenu, onDismissMobileMenu, visible }: INavbarPr
                 </a>
               ))}
             </div>
-            <button className="py-[14px] px-11 bg-[#ffffff3d]  border-[1px] border-[#FFFFFF3D] text-white text-16 font-bold text-center rounded-[40px] shadow-[0px_2px_12px_0px_#0101013D] hidden md:block ">
+            <button className="h-[40px] min-w-[152px] px-10 bg-[#ffffff3d]  border-[1px] border-[#FFFFFF3D] text-white text-16 font-bold text-center rounded-[40px] shadow-[0px_2px_12px_0px_#0101013D] hidden md:block ">
               Dextools
             </button>
             <div

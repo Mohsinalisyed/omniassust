@@ -11,10 +11,10 @@ const OurVision = () => {
           <div className="max-w-[1064px] relative overflow-hidden bg-vision flex justify-between w-full bg-no-repeat bg-cover bg-left gap-10  rounded-[8px] flex-col md:flex-row">
             <BackgroundGardientColor />
             <div className=" py-12 max-w-[482px] z-10">
-              <h3 className="text-24 md:text-32 font-bold pb-4 text-gray_two">
+              <h3 className="text-24 md:text-24 font-medium pb-4 text-gray_two">
                 Begin Your Support Evolution
               </h3>
-              <p className="text-16 leading-5 pb-6 text-gray_two">
+              <p className="text-14 leading-5 pb-6 text-gray_two">
                 Join thousands of businesses transforming their customer
                 experience with AI-powered innovation.
               </p>

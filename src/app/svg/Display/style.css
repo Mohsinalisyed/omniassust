@@ -1,16 +1,16 @@
 .animated-path {
-    fill: #000;
-    /* Starting color */
-    animation: colorChange 2s infinite alternate;
-    /* Animation every 2 seconds */
-}
+      fill: #000;
+      /* Starting color */
+      animation: colorChange 2s infinite alternate;
+      /* Animation every 2 seconds */
+  }
 
-@keyframes colorChange {
-    0% {
-        fill: #000;
-    }
+  @keyframes colorChange {
+      0% {
+          fill: #000;
+      }
 
-    100% {
-        fill: #fff;
-    }
-}
+      100% {
+          fill: #fff;
+      }
+  }
