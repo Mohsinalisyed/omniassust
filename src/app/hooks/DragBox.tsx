@@ -34,7 +34,7 @@ React.useEffect(() => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        fontWeight: "bold",
+        fontWeight: 500,
         border: "1.5px solid rgba(255, 255, 255, 0.16)",
       }}
     >
