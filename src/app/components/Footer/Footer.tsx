@@ -8,7 +8,7 @@ import Discord from '@/app/svg/Discord'
 import Telegram from '@/app/svg/Telegram'
 const Footer = () => {
     return (
-      <div className="w-full relative overflow-hidden   pt-[200px]">
+      <div className="w-full relative overflow-hidden   pt-[120px] md:pt-[64px]">
         <div className="bg-footer"></div>
         <div className="container flex flex-col justify-between py-8">
           <div className="flex justify-between">

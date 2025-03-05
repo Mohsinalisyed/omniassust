@@ -103,7 +103,7 @@ const phasesettings = {
   };
 
   return (
-    <div className="sliderContainer">
+    <div className="sliderContainer overflow-hidden">
       <div className="md:block hidden">
         <DragBox />
       </div>

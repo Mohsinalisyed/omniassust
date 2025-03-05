@@ -24,7 +24,7 @@ export const AboutUsCard = ({ item, index }: AboutUsCardProps) => {
         </div>
         <div>
           <div
-            className={`py-6 font-bold ${
+            className={`py-4 font-bold ${
               item.description !== "" ? "text-[20px]" : "text-[24px]"
             }`}
           >

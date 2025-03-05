@@ -34,8 +34,10 @@ const HeroSection = () => {
               <div className="text-gray_two text-40 md:text-[56px] text-center mt-[40px] mb-[24px] leading-[44px] md:leading-[61px]">
                 Transforming CSaaS with{" "}
                 <span className="bg-text_gradient_one text-transparent bg-clip-text">
-                  AI <br />
+                  AI
                 </span>
+                <span className="text-gray_two">,</span>
+                <br />
                 <span className="text-orange">Blockchain</span>, and{" "}
                 <span className="text-orange">Multi-Channel</span> <br />{" "}
                 Innovation
@@ -47,7 +49,7 @@ const HeroSection = () => {
                 integrity.
               </p>
               <div className="flex justify-center mt-[40px] gap-4">
-                <button className="h-[44px] min-w-[152px]  bg-orange text-white text-16  text-center rounded-[40px] shadow-[0px_2px_12px_0px_#0101013D]">
+                <button className="h-[44px] min-w-[152px]  bg-orange text-white text-16  text-center rounded-[40px] shadow-[0px_2px_12px_0px_#0101013D] hover:bg-orange_hover">
                   Join Now
                 </button>
                 <div className="relative">

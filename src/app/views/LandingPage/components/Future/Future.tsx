@@ -7,7 +7,7 @@ const Future = () => {
       <div className="w-full flex flex-col items-center">
         <div className="w-full pt-[120px] md:pt-[240px] flex flex-col justify-center items-center gap-4 ">
           <h1 className="heading-font">
-            Built for the
+            Built For The
             <span className="bg-text_gradient_one text-transparent bg-clip-text">
               {" "}
               Future{" "}

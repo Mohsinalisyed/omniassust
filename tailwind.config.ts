@@ -51,6 +51,7 @@ export default {
         gray_five: "#ffffff1f",
         card_background: "#ffffff06",
         orange: "#FB491E",
+        orange_hover:"#C82A04",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
