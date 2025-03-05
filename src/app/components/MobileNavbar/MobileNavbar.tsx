@@ -38,14 +38,14 @@ const MobileNavbar = ({ visible, onDismissMobileMenu }: MobileMenuProps) => {
         return null;
     }
     return (
-        <div id="animatedDiv" className={cn('fixed inset-0 z-50 top-0 ', isAnimating
+        <div id="animatedDiv" className={cn('fixed inset-0 z-[150] top-0 ', isAnimating
             ? visible
                 ? 'block animate-slide-from-top'
                 : 'block animate-slide-to-top'
             : 'block')}>
             <div className='relative h-full w-full'>
                 <div className='bg-darkest_white backdrop-blur-[80px] flex flex-col w-full h-full p-2'>
-                    <div className='flex flex-col px-4 py-[60px] h-full'>
+                    <div className='flex flex-col px-4 py-[80px] h-full'>
                         <div className='flex justify-end items-center mb-10' onClick={onDismissMobileMenu} >
                             <MenuCloseIcon />
                         </div>

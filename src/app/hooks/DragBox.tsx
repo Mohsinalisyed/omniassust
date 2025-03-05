@@ -31,7 +31,7 @@ React.useEffect(() => {
         pointerEvents: "none",
         transform: transform, // Apply transform here
         transition: prefersReducedMotion ? "none" : "transform 0.1s ease-out",
-        zIndex: "10", // Use appropriate z-index
+        zIndex: "100", // Use appropriate z-index
           borderRadius: "100%",
         display: "flex",
           justifyContent: "center",

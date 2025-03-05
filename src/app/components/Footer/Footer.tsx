@@ -9,7 +9,7 @@ import Telegram from '@/app/svg/Telegram'
 const Footer = () => {
     return (
       <div className="w-full relative overflow-hidden   pt-[200px]">
-        <div className="bg-footer hidden md:block"></div>
+        <div className="bg-footer"></div>
         <div className="container flex flex-col justify-between py-8">
           <div className="flex justify-between">
             <div className="flex  flex-col w-full md:w-[522px]">
@@ -42,13 +42,13 @@ const Footer = () => {
                 <Telegram />
               </div>
               <div className="flex flex-row-reverse w-full justify-between md:hidden">
-                <div className="md:hidden flex-col flex gap-8 md:mb-8 mr-6">
+                <div className="md:hidden flex-col flex gap-4 md:mb-8 mr-6">
                   <Twitter />
                   <Facebook />
                   <Discord />
                   <Telegram />
                 </div>
-                <div className="flex flex-col md:hidden gap-8 justify-center mb-12">
+                <div className="flex flex-col md:hidden gap-4 justify-center mb-12">
                   <h5 className="font-bold text-20">Omni Network</h5>
                   {FooterData.map((item, index) => (
                     <a

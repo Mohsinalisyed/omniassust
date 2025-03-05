@@ -22,7 +22,7 @@ const Navbar = ({ onPresentMobileMenu, onDismissMobileMenu, visible }: INavbarPr
     }, []);
 
     return (
-      <div className="fixed mt-6 w-full z-[9999]">
+      <div className="fixed mt-6  w-full z-[9999]">
         <div className="container">
           <div
             className={cn(
@@ -41,7 +41,7 @@ const Navbar = ({ onPresentMobileMenu, onDismissMobileMenu, visible }: INavbarPr
                   target={
                     index + 1 === NavbarData.length ? "_blank" : undefined
                   }
-                  className="w-[90px] text-center no-underline text-white text-16"
+                  className="w-[90px] text-center no-underline text-white text-16 hover:text-gray_two "
                 >
                   {item?.name}
                 </a>

@@ -11,10 +11,10 @@ export const NavbarData: INavbarData[] = [
         name: "About Us",
         id: "#aboutus"
     },
-    // {
-    //     name: "Features",
-    //     id: "#features"
-    // },
+    {
+        name: "Features",
+        id: "#features"
+    },
     {
         name: "Tokenomics",
         id: "#tokenomics"

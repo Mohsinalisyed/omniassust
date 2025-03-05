@@ -15,15 +15,13 @@ const PhaseSlider = () => {
 
   // Set up Slick settings
 const settings = {
-  infinite: true,
+  infinite: false,
   arrows: false,
   dots: false,
   autoplay: false,
   speed: 800,
-  slidesToShow: 3.1, // Default value for larger screens
+  slidesToShow: 3.2, // Default value for larger screens
   slidesToScroll: 1,
-  centerMode: true, // Center the slides to make part of the next slide visible
-  centerPadding: "2%",
   beforeChange: (current: number, next: number) => {
     setProgressBarIndex(next);
     if (cardSliderRef.current) {
@@ -53,7 +51,7 @@ const settings = {
 
 
 const phasesettings = {
-  infinite: true,
+  infinite: false,
   arrows: false,
   dots: false,
   autoplay: false,
@@ -106,8 +104,14 @@ const phasesettings = {
 
   return (
     <div className="sliderContainer">
-      <DragBox />
+      <div className="md:block hidden">
+        <DragBox />
+      </div>
       <div className="max-w-[1440px] mx-auto">
+        <div className="relative">
+          <div className="left-slider-effect absolute"></div>
+          <div className="right-slider-effect absolute"></div>
+        </div>
         <div className="progressBarContainer">
           {/* Phase slider */}
           <div style={{ pointerEvents: "none" }}>
@@ -135,7 +139,8 @@ const phasesettings = {
         </div>
 
         {/* Slide card slider */}
-        <Slider ref={phaseSliderRef} {...settings}>
+
+        <Slider ref={phaseSliderRef} {...settings} className="relative">
           {PhaseData.map((phase, index) => (
             <div key={index} className="slick-slide">
               <SlideCard

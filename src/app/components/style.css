@@ -27,7 +27,7 @@
 
 .yellow-circle {
     background: rgba(251, 202, 30, 1);
-    filter: blur(120px);
+    filter: blur(100px);
     top:-20%;
     left:-2%
 }
@@ -35,6 +35,6 @@
 .org-circle {
     background: rgba(251, 73, 30, 1);
     top: 30%;
-    filter: blur(100px);
+    filter: blur(80px);
     left: 0%;
 }

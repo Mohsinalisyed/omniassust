@@ -4,8 +4,8 @@ import PhaseSlider from './component/PhaseSlider';
     
 const JouneryPhase = () => {
   return (
-    <div>
-      <div id={"aboutus"} className="max-w-[846px] mx-auto mb-[80px] px-4 md:px-0">
+    <div className='w-full max-w-[1440px] mx-auto'>
+      <div id={"aboutus"} className="w-full max-w-[846px] mx-auto mb-[80px] px-4 md:px-0">
         <div className="w-full flex flex-col items-center">
           <div className="w-full flex flex-col justify-center items-center gap-4 ">
             <h1 className="heading-font">
