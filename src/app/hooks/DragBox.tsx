@@ -24,20 +24,22 @@ React.useEffect(() => {
       style={{
         position: "absolute",
         width: "80px",
-          height: "80px",
-        background:'#ffffff3d',
+        height: "80px",
+        background: "#ffffff3d",
         pointerEvents: "none",
         transform: transform, // Apply transform here
         transition: prefersReducedMotion ? "none" : "transform 0.1s ease-out",
         zIndex: "100", // Use appropriate z-index
-          borderRadius: "100%",
+        borderRadius: "100%",
         display: "flex",
-          justifyContent: "center",
+        justifyContent: "center",
         alignItems: "center",
+        fontWeight: "bold",
+        border: "1.5px solid rgba(255, 255, 255, 0.16)",
       }}
-      >
-          DRAG
-      </div>
+    >
+      DRAG
+    </div>
   );
 };
 
