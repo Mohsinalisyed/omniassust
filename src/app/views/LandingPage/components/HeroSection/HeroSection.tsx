@@ -7,7 +7,7 @@ import CursorBox from "@/app/hooks/CursorBox";
 const HeroSection = () => {
   return (
     <>
-      <div className="relative w-full max-w-[1920px] h-screen mx-auto overflow-hidden">
+      <div className="relative w-full max-w-[1920px] min-h-screen mx-auto overflow-hidden">
         <div className="hero-bg-image"></div>
         <section
           id="home"
