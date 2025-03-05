@@ -53,7 +53,7 @@ const Footer = () => {
                   {FooterData.map((item, index) => (
                     <a
                       href={item.id}
-                      className="text-gray_two text-16 font-medium"
+                      className="text-gray_two text-16 font-medium hover:text-white"
                       key={`${item.id}${index + 2}`}
                     >
                       {item.name}
@@ -67,7 +67,7 @@ const Footer = () => {
               {FooterWebData.map((item, index) => (
                 <a
                   href={item.id}
-                  className="text-gray_two text-16 font-medium"
+                  className="text-gray_two text-16 font-medium hover:text-white"
                   target={
                     index + 1 === NavbarData.length ? "_blank" : undefined
                   }
@@ -79,9 +79,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" flex flex-col gap-6 z-10 md:py-10 xl:py-0">
-            <div
-              className="border-t-[#FFFFFF66] border-t-[1px] w-full  mt-12 md:mt-0"
-            />
+            <div className="border-t-[#FFFFFF66] border-t-[1px] w-full  mt-12 md:mt-0" />
             <div className="w-full flex flex-col gap-5 md:flex-row justify-between items-center">
               <p className="text-gray_two text-16 font-medium">
                 Omniassist.ai 2025

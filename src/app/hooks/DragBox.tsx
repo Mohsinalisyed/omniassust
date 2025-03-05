@@ -11,10 +11,8 @@ const DragBox = () => {
   // Only apply transform on the client side
 React.useEffect(() => {
   if (!prefersReducedMotion && mousePosition.x && mousePosition.y) {
-    // Decrease the distance by adding an offset (e.g., 10px)
-    const offset = 0; // Adjust this value to get the desired distance
     setTransform(
-      `translate(${mousePosition.x - offset}px, ${mousePosition.y - 0}px)`
+      `translate(${mousePosition.x - 170}px, ${mousePosition.y - 170}px)`
     );
   }
 }, [mousePosition, prefersReducedMotion]);
@@ -38,7 +36,7 @@ React.useEffect(() => {
         alignItems: "center",
       }}
       >
-          Drag
+          DRAG
       </div>
   );
 };
