@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react'
 import { cn } from '@/app/utils';
 import { NavbarData } from '../Content';
-import { MenuCloseIcon } from '../Icons';
 
 interface MobileMenuProps {
     visible?: boolean
