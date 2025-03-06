@@ -7,7 +7,7 @@ import CursorBox from "@/app/hooks/CursorBox";
 const HeroSection = () => {
   return (
     <>
-      <div className="relative w-full max-w-[1920px] min-h-screen bg-transparent mx-auto overflow-hidden">
+      <div className="relative w-full max-w-[1920px] min-h-[80vh] bg-transparent mx-auto overflow-hidden">
         <div className="hero1-bg-image"></div>
         <div className="hero-bg-image"></div>
         <section
@@ -21,7 +21,7 @@ const HeroSection = () => {
               <div key={index} className="grid-box"></div>
             ))}
           </div>
-          <div className="min-h-[90vh] w-full h-full relative flex justify-center items-center z-[102]">
+          <div className="min-h-[80vh] w-full h-full relative flex justify-center items-center z-[102]">
             <div className="flex flex-col max-w-[1063px] items-center min-h-[398px] pb-10 md:pb-0">
               <div className="relative">
                 <div className="absolute top-[-5px]">
