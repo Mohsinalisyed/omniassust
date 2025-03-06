@@ -29,8 +29,8 @@ const FutureCard = () => {
               <LeftLines />
             </div>
             <div className="absolute top-[40%] left-10">
-              <div className="w-[280px] h-[120px]  ai-yellow-circle absolute"></div>
-              <div className="w-[440px] h-[140px] ai-org-circle absolute"></div>
+              <div className="w-[240px] h-[120px]  ai-yellow-circle absolute"></div>
+              <div className="w-[360px] h-[140px] ai-org-circle absolute"></div>
             </div>
           </div>
           <div className="w-full md:w-[60%] flex justify-center md:items-start flex-col relative right-0 md:right-[-20%] md:absolute">

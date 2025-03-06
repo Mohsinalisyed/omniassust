@@ -12,8 +12,8 @@ const CursorBox = () => {
   React.useEffect(() => {
     if (!prefersReducedMotion && mousePosition.x && mousePosition.y) {
       // Calculate transform to center the cursor
-      const offsetX = 140; // Half of the width of the cursor (280px / 2)
-      const offsetY = 140; // Half of the height of the cursor (280px / 2)
+      const offsetX = 0; // Half of the width of the cursor (280px / 2)
+      const offsetY = 0; // Half of the height of the cursor (280px / 2)
       setTransform(
         `translate(${mousePosition.x - offsetX}px, ${
           mousePosition.y - offsetY

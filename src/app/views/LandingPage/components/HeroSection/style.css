@@ -91,7 +91,7 @@ background-image: linear-gradient(rgba(251, 73, 30, 1) 0%,
     filter: blur(70px);
     /* Set right to 0 */
     top: 15%;
-    transform: rotate(-30deg);
+    transform: rotate(-50deg);
     /* Adjust top position */
     translate: 50px -50px;
     /* Reset translate */
@@ -100,6 +100,7 @@ background-image: linear-gradient(rgba(251, 73, 30, 1) 0%,
             height: 80px;
             right: -15%;
             filter: blur(70px);
+                transform: rotate(-50deg);
             width: 110%;
             /* Set right to 0 */
             top: 18%;
