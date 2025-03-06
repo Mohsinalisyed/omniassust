@@ -9,7 +9,7 @@ import Telegram from '@/app/svg/Telegram'
 const Footer = () => {
     return (
       <div className="w-full relative overflow-hidden   pt-[120px] md:pt-[64px]">
-        <div className="bg-footer"></div>
+        <div className="bg-footer z-[-1]"></div>
         <div className="container flex flex-col justify-between py-8">
           <div className="flex justify-between">
             <div className="flex  flex-col w-full md:w-[522px]">
@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
           </div>
           <div className=" flex flex-col gap-6 z-10 md:py-10 xl:py-0">
-            <div className="border-t-[#FFFFFF66] border-t-[1px] w-full  mt-12 md:mt-0" />
+            <div className="border-t-[#FFFFFF1f] border-t-[1px] w-full  mt-12 md:mt-0" />
             <div className="w-full flex flex-col gap-5 md:flex-row justify-between items-center">
               <p className="text-gray_two text-16 font-medium">
                 Omniassist.ai 2025
@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
               <a
                 href={"#home"}
-                className="flex items-center gap-1 no-underline"
+                className=" items-center gap-1 no-underline hidden  md:flex"
               >
                 <TopArrowIcon />
                 <p className="text-16 font-medium">Back to Top</p>

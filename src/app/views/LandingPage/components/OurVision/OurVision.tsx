@@ -24,10 +24,10 @@ const OurVision = () => {
                   <div className="absolute"></div>
                   Start Your AI Journey
                 </button>
-                <button className="h-[40px] min-w-[155px] border-mask hover:bg-gray_five">
+                <button className="h-[40px] text-[14px] min-w-[155px] border-mask hover:bg-gray_five">
                   Join The Waitlist
                 </button>
-                <button className="h-[40px] min-w-[155px] flex items-center gap-1 justify-center border-mask hover:bg-gray_five">
+                <button className="h-[40px] text-[14px]  min-w-[155px] flex items-center gap-1 justify-center border-mask hover:bg-gray_five">
                   <Documentaion /> Read Docs
                 </button>
               </div>

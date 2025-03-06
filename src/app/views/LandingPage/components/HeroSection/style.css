@@ -2,98 +2,140 @@
 
 /* The container for the section */
 #home {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    background-size: 100px 100px;
-    /* To ensure it stays in the background */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-size: 100px 100px;
+  /* To ensure it stays in the background */
 }
 
 /* Create the grid items */
 .grid-container {
-    max-width: 1920px;
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1px));
-    grid-template-rows: repeat(auto-fill, minmax(100px, 1px));
-    /* Define 10 rows, adjust as needed */
-    gap: 1px;
-    /* Remove gap between grid items */
-    padding: 1px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: -10%;
-    bottom: 0;
-    z-index: 1;
+  max-width: 1920px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1px));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1px));
+  /* Define 10 rows, adjust as needed */
+  gap: 1px;
+  /* Remove gap between grid items */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -10%;
+  bottom: 0;
+  z-index: 1;
 }
 
 /* Box styling for each grid item */
 .grid-box {
-    padding: 10px;
-    /* font-size: 30px; */
-    text-align: center;
-    background-color: #010101;
-    width: 100px;
-    height: 100px;
+  padding: 10px;
+  /* font-size: 30px; */
+  text-align: center;
+  background-color: #010101;
+  width: 100px;
+  height: 100px;
 }
 .hero-bg-image {
-    height: 200px;
-    background-color: rgba(251, 73, 30, 1);
-    background-image: linear-gradient(rgba(251, 73, 30, 1), rgba(251, 202, 30, 1));
-    transform: rotate(-45deg);
-    width: 100%;
-    position: absolute;
-    background-color: transparent;
-    z-index: 101;
-    overflow: hidden;
-    filter: blur(100px);
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
-    animation: animate-merge 1s ease-in infinite alternate;
-    /* Animation applied */
-    background-position: 0% 0%;
-    translate: 100px -100px;
-    animation: animate-merge 2s infinite alternate ease-in;
-    top: -20%;
-    right: -50%;
+  height: 180px;
+  background-color: rgba(251, 73, 30, 1);
+  background-image: linear-gradient(
+    rgba(251, 73, 30, 1),
+    rgba(251, 202, 30, 1)
+  );
+  transform: rotate(-25deg);
+  width: 95%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 101;
+  overflow: hidden;
+  filter: blur(100px);
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  animation: animate-merge 1s ease-in infinite alternate;
+  /* Animation applied */
+  background-position: 0% 0%;
+  translate: 50px -50px;
+  animation: animate-merge 2s infinite alternate ease-in;
+  top: 1%;
+  right: -50%;
+}
+.hero1-bg-image {
+  height: 180px;
+background-image: linear-gradient(rgba(251, 73, 30, 1) 0%,
+            rgba(251, 73, 30, 1) 80%,
+            rgba(251, 202, 30, 1) 80%,
+            rgba(251, 202, 30, 1) 100%
+        );
+  transform: rotate(-35deg);
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 101;
+  overflow: hidden;
+  filter: blur(120px);
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  animation: animate-merge 1s ease-in infinite alternate;
+  /* Animation applied */
+  background-position: 0% 0%;
+  translate: 100px -100px;
+  animation: animate-merge 2s infinite alternate ease-in;
+  top: -15%;
+  right: -50%;
 }
 @media screen and (max-width: 768px) {
-    .hero-bg-image {
-        right: -15%;
-        /* Set right to 0 */
-        top: 0;
-        /* Adjust top position */
-        translate: 50px -50px;
-        /* Reset translate */
-    }
-}
-@keyframes animate-merge {
-    100% {
-            translate: 0;
+  .hero-bg-image {
+    right: -15%;
+     height: 80px;
+    filter: blur(70px);
+    /* Set right to 0 */
+    top: 15%;
+    transform: rotate(-30deg);
+    /* Adjust top position */
+    translate: 50px -50px;
+    /* Reset translate */
+  }
+        .hero1-bg-image {
+            height: 80px;
+            right: -15%;
+            filter: blur(70px);
+            width: 110%;
+            /* Set right to 0 */
+            top: 18%;
+            /* Adjust top position */
+            translate: 50px -50px;
+            /* Reset translate */
         }
 }
+@keyframes animate-merge {
+  100% {
+    translate: 0;
+  }
+}
 .text-gradient-orange {
-    background-image: linear-gradient(87.84deg, #FB491E 77.71%, #FBCA1E 84.04%);
+  background-image: linear-gradient(87.84deg, #fb491e 77.71%, #fbca1e 84.04%);
 }
 
 .border-mask {
-    position: relative;
-    border-radius: 20px;
+  position: relative;
+  border-radius: 20px;
 }
 
 .border-mask::before {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    border-radius: 20px;
-    inset: 0;
-    mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    background-image: linear-gradient(10.56deg, rgba(255, 255, 255, 0.1024) 49.85%, rgba(255, 255, 255, 0.64) 85.85%);
-    /* Adjusted angle */
-    border-radius: inherit;
-    padding: 1px;
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 20px;
+  inset: 0;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  background-image: linear-gradient(
+    18.56deg,
+    rgba(255, 255, 255, 0.1024) 49.85%,
+    rgba(255, 255, 255, 0.64) 80.85%
+  );
+  /* Adjusted angle */
+  border-radius: inherit;
+  padding: 1px;
 }

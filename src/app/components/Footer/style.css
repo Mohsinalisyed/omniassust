@@ -2,7 +2,7 @@
 height: 200px;
     background-color: rgba(251, 73, 30, 1);
     background-image: linear-gradient(rgba(251, 73, 30, 1), rgba(251, 202, 30, 1));
-    transform: rotate(-45deg);
+    transform: rotate(-40deg);
     width: 100%;
     position: absolute;
     background-color: transparent;
@@ -14,7 +14,7 @@ height: 200px;
     background-position: 0% 0%;
     translate: 100px -150px;
     animation: animate-merge 2s infinite alternate ease-in;
-    bottom: -50%;
+    bottom: -40%;
     left: -55%;
 }
 @media screen and (max-width: 768px) {
@@ -23,7 +23,7 @@ height: 200px;
         /* Set right to 0 */
         width: 100vh;
         bottom: 0;
-        transform: rotate(-60deg);
+        transform: rotate(-50deg);
         /* Adjust top position */
         translate: 50px -100px;
         /* Reset translate */

@@ -24,12 +24,13 @@ const FutureCard = () => {
               <Image
                 src={img}
                 alt=""
-                className="absolute top-24 left-[118px]"
+                className="absolute top-24 left-[126px] z-10"
               />
               <LeftLines />
             </div>
             <div className="absolute top-[40%] left-10">
-              <BackgroundGardientColor />
+              <div className="w-[280px] h-[120px]  ai-yellow-circle absolute"></div>
+              <div className="w-[440px] h-[140px] ai-org-circle absolute"></div>
             </div>
           </div>
           <div className="w-full md:w-[60%] flex justify-center md:items-start flex-col relative right-0 md:right-[-20%] md:absolute">
@@ -37,10 +38,18 @@ const FutureCard = () => {
               Advanced AI Integration
             </p>
             <ul className="md:list-disc  mt-6 list-bullets text-gray_two text-[16px]">
-              <li className='text-center mb-4 md:text-start'>Natural Language Processing</li>
-              <li className='text-center mb-4 md:text-start'>Predictive Analytics</li>
-              <li className='text-center mb-4 md:text-start'>Personalized Learning</li>
-              <li className='text-center mb-4 md:text-start'>Continuous Improvement</li>
+              <li className="text-center mb-4 md:text-start">
+                Natural Language Processing
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Predictive Analytics
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Personalized Learning
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Continuous Improvement
+              </li>
             </ul>
           </div>
         </div>
@@ -55,10 +64,18 @@ const FutureCard = () => {
               Enterprise-Grade Security
             </p>
             <ul className="md:list-disc mt-6 list-bullets text-gray_two text-[16px]">
-              <li className='text-center mb-4 md:text-start'>Smart Contract Audits</li>
-              <li className='text-center mb-4 md:text-start'>End-to-End Encryption</li>
-              <li className='text-center mb-4 md:text-start'>Multi-Factor Authentication</li>
-              <li className='text-center mb-4 md:text-start'>Real-Time Monitoring</li>
+              <li className="text-center mb-4 md:text-start">
+                Smart Contract Audits
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                End-to-End Encryption
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Multi-Factor Authentication
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Real-Time Monitoring
+              </li>
             </ul>
           </div>
           <div className="hidden  md:block">
@@ -66,9 +83,12 @@ const FutureCard = () => {
               <div className="relative">
                 <div className="absolute top-[15%] left-0 z-[-1]">
                   <BackgroundGardientColor />
+                  <div className="absolute top-[20%] left-[80px]">
+                    <div className="w-[280px] h-[120px]  ai-yellow-circle absolute"></div>
+                  </div>
                 </div>
-                <div className="absolute top-[50%] left-24 z-[-1]">
-                  <BackgroundGardientColor />
+                <div className="absolute top-[40%] left-[120px] z-[-1]">
+                  <div className="w-[440px] h-[140px] ai-org-circle absolute"></div>
                 </div>
                 <div className="absolute top-[-140px] left-[180px]">
                   <Display />
@@ -116,10 +136,18 @@ const FutureCard = () => {
               Blockchain Powered
             </p>
             <ul className="md:list-disc mt-6 list-bullets text-gray_two text-[16px]">
-              <li className='text-center mb-4 md:text-start'>Smart Contract Security</li>
-              <li className='text-center mb-4 md:text-start'>Layer 2 Scalability</li>
-              <li className='text-center mb-4 md:text-start'>Transparent Operations</li>
-              <li className='text-center mb-4 md:text-start'>Immutable Records</li>
+              <li className="text-center mb-4 md:text-start">
+                Smart Contract Security
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Layer 2 Scalability
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Transparent Operations
+              </li>
+              <li className="text-center mb-4 md:text-start">
+                Immutable Records
+              </li>
             </ul>
           </div>
         </div>

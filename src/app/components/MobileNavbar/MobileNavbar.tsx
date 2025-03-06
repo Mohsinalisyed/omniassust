@@ -46,9 +46,9 @@ const MobileNavbar = ({ visible, onDismissMobileMenu }: MobileMenuProps) => {
             <div className='relative h-full w-full'>
                 <div className='bg-darkest_white backdrop-blur-[80px] flex flex-col w-full h-full p-2'>
                     <div className='flex flex-col px-4 py-[80px] h-full'>
-                        <div className='flex justify-end items-center mb-10' onClick={onDismissMobileMenu} >
+                        {/* <div className='flex justify-end items-center mb-10' onClick={onDismissMobileMenu} >
                             <MenuCloseIcon />
-                        </div>
+                        </div> */}
                         <div className='flex flex-col gap-20 items-center justify-center'>
                             {
                                 NavbarData.map((item, index) => (

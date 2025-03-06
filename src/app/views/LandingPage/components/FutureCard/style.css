@@ -22,3 +22,19 @@
         opacity: 0.6;
     }
 }
+.ai-yellow-circle {
+    background: rgba(251, 202, 30, 1);
+    filter: blur(100px);
+    top: -130px;
+    left: 100px;
+    transform: rotate(15deg);
+    border-radius: 100%;
+}
+
+.ai-org-circle {
+    background: rgba(251, 73, 30, 1);
+    top: 0px;
+    filter: blur(140px);
+    left: -100px;
+    border-radius: 100%;
+}
